@@ -29,12 +29,13 @@ public class hackerrank {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        // ArrayList<long>list = new ArrayList<>();
-        List<Long> list = new ArrayList<Long>(Arrays. asList(1L, 2L));
-        for (int i=0; i<5; i++){
-            list.add(sc.nextLong());
+        try (Scanner sc = new Scanner(System.in)) {
+            // ArrayList<long>list = new ArrayList<>();
+            List<Long> list = new ArrayList<Long>(Arrays. asList(1L, 2L));
+            for (int i=0; i<5; i++){
+                list.add(sc.nextLong());
+            }
+            miniMaxSum(list);
         }
-        miniMaxSum(list);
     }
 }
